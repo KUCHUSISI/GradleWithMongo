@@ -8,4 +8,6 @@ import com.example.Model.Student;
 @Repository
 public interface RequiredRepo extends MongoRepository<Student, String>{
 
+	Student findByFirstName(String id);
+
 }
